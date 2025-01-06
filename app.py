@@ -13,4 +13,6 @@ This app performs simple webscraping of NBA player stats data!
 * **Data Source:** [Basketball-reference.com](https://www.basketball-reference.com/)
 """)
 
-st.sidebar.head('User ')
+st.sidebar.header('User Input Features')
+selected_year = st.sidebar.selectbox('Year', list(reversed(range(1950, 2020))))
+
